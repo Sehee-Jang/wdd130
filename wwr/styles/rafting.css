@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap');
+
+:root {
+    --primary-color: #0092fb;
+    --secondary-color: #198BCA;
+    --accent1-color: #00569B;
+    --accent2-color: #4CAF50;
+
+    --heading-font: 'Roboto' ,serif;
+    --paragraph-font: 'Open Sans', serif;
+
+    --nav-background-color: #0087e8;
+    --nav-link-color: #fff;
+    --nav-hover-link-color: #00569B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+header {
+    /* padding: 20px; */
+}
+
+header img a {
+    text-align: center;
+}
+
+header nav {
+
+}
+
+p {
+    padding: 20px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2em;
+    display: flex;
+}
+
+nav a {
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    color: var(--nav-link-color);
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+/* Class Selectors */
+.mission {
+    position: relative;
+}
+
+section {
+    padding-bottom: 20px;
+}
+
+.mission .bg img, .adventure img {
+    display: block;
+    width: 100%;    
+    height: auto;
+}
+
+.mission h1, article {
+    position: absolute;
+}
+
+.mission h1 {
+    top: 15%;
+    left: 30%;
+    color: #fff;
+    text-shadow: 0 0 10px #1b1b1b;
+    font-size: 2.7em;
+}
+
+.mission article {
+    top: 30%;
+}
+
+.mission article .transbox {
+    margin: 30px;
+    background-color: #000000a6;
+    box-shadow: 0 0 10px #1b1b1b;
+    opacity: 0.9;
+    text-align: left;
+}
+
+.mission article .transbox p {
+    padding: 40px;
+    color: #fff;
+}
+.mission article img {
+    float: right;
+    width: 25%;
+    height: auto;
+    padding: 20px;
+    padding-right: 10px;
+}
