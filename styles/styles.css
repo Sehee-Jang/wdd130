@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-    background-color: steelblue;
+    background-color: #01559a;
     padding: 10px;
     display: flex;
     justify-content: space-around;
@@ -26,9 +26,9 @@ nav a {
 }
 
 h1 {
-    color: steelblue;
+    color: #01559a;
     padding: .5rem;
-    border-bottom: 1px solid steelblue;
+    border-bottom: 1px solid #01559a;
 }
 
 main {
