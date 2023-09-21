@@ -31,3 +31,55 @@
 
     flex-flow: row wrap
 -->
+
+<html>
+    <head>
+        <title>Flexbox Example</title>
+    </head>
+    <body>
+        <style>
+            .flexbox_container {
+                display: flex;
+                background-color: yellow;
+                /* justify-content: center; */
+            }
+
+            .flexbox_item {
+                width: 200px;
+                margin: 10px;
+                border: 3px solid #333;
+                background-color: #dfdfdf;
+            }
+
+            .flexbox_item_1 {
+                min-height: 100px;
+                flex-shrink: 0;
+                align-self: flex-end;
+                order: 3
+            }
+
+            .flexbox_item_2 {
+                min-height: 200px;
+                flex-grow: 2;
+                flex-basis: 0;
+                align-self: center;
+                order: 1
+            }
+
+            .flexbox_item_3 {
+                min-height: 300px;
+                flex-grow: 1;
+                flex-basis: 0;
+                order: 2
+            }
+                
+        </style>
+
+        <div class="flexbox_container">
+            <div class="flexbox_item flexbox_item_1">Flexbox Item 1</div>
+            <div class="flexbox_item flexbox_item_2">Flexbox Item 2</div>
+            <div class="flexbox_item flexbox_item_3">Flexbox Item 3</div>
+        </div>
+          
+    </body>
+</html>

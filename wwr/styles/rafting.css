@@ -10,9 +10,10 @@
     --heading-font: 'Roboto' ,serif;
     --paragraph-font: 'Open Sans', serif;
 
-    --nav-background-color: #0087e8;
-    --nav-link-color: #fff;
+    --nav-link-color: #333;
     --nav-hover-link-color: #00569B;
+
+    --footer-background-color: #454545;
 }
 
 * {
@@ -32,41 +33,50 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color)
 }
 
-header {
-    /* padding: 20px; */
-}
-
-header img a {
-    text-align: center;
-}
-
 p {
     padding: 20px;
 }
 
-nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2em;
-    display: flex;
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
-nav a {
+header img {
+    width: 120px;
+    margin: 0 auto;
+}
+
+header nav {
+    /* background-color: var(--nav-background-color); */
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    align-self: center;
+}
+
+header nav a {
     padding: 20px 20px;
     text-decoration: none;
-    color: #000;
-    display: block;
+    text-align: center;
     color: var(--nav-link-color);
 }
 
-nav a:link, nav a:visited {
+header nav a:link, nav a:visited {
     color: var(--nav-link-color);
 }
 
-nav a:hover {
+header nav a:hover {
     color: var(--nav-hover-link-color);
 }
 
 /* Class Selectors */
+.subtitle {
+    text-align: center;
+    font-size: 2em;
+}
+
 .mission {
     position: relative;
 }
@@ -115,4 +125,49 @@ section {
     height: auto;
     padding: 20px;
     padding-right: 10px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.history .history_title {
+    grid-column: 1/4;
+}
+
+.history img {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.adventure .adventure_title {
+    grid-column: 1/6;
+}
+
+.footer_container {
+    background-color: var(--footer-background-color);
+    color: #c9c9c9;
+    display: flex;
+    align-items: center;
+}
+
+.footer_container p {
+    flex: 2;
+    text-align: center;
+    padding-left: 15%;
+}
+
+.footer_container .socialmedia {
+    padding-right: 2%;
+}
+.footer_container .socialmedia img {
+    padding-right: .5rem;
 }
