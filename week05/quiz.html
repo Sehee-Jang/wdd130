@@ -3,13 +3,43 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>quiz</title>
-        <meta name="description" content="week 5 quiz">
+        <title>WDD 130 | HTML Form - Quiz Form</title>
+        <meta name="description" content="week 5 quiz form">
         <meta name="author" content="Sehee Jang">
+        <link rel="stylesheet" href="style/quiz.css">
     </head>
     <body>
-        <form action="">
+        <header>
+            <h1>Basic HTML and CSS Quiz</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <label for="q1"><span class="number">1.</span> How to combine the table "th" and the "td" rules together in</label>
+                    <input type="text" name="q1" id="q1">
 
-        </form>
+                    <label for="q2"><span class="number">2.</span> Explain how to make radio buttons bigger.</label>
+                    <textarea name="q2" id="q2" cols="30" rows="10"></textarea>
+
+                    <label for="q3"><span class="number">3.</span> To group form controls, what HTML form element should you use?</label>
+                    <select name="q3" id="q3">
+                        <option value="" selected disabled>Choose One</option>
+                        <option value="textarea">textarea</option>
+                        <option value="select">select</option>
+                        <option value="radio">radio</option>
+                        <option value="fieldset">fieldset</option>
+                    </select>
+
+                    <label for="q4"><span class="number">4.</span> Which is the bottom margin given this declaraion?</label>
+                    <img src="images/q4.jpg" alt="margin: 8px 10px 5px">
+                    <input type="number" name="q4" id="q4">
+                </fieldset>
+                <button type="submit">Submit Quiz</button>
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+        
     </body>
 </html>
