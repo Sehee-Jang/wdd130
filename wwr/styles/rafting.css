@@ -37,6 +37,10 @@ p {
     padding: 20px;
 }
 
+li {
+    list-style: none;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -71,7 +75,9 @@ header nav a:hover {
     color: var(--nav-hover-link-color);
 }
 
-/* Class Selectors */
+/**** Class Selectors ****/
+
+/* About Page*/
 .subtitle {
     text-align: center;
     font-size: 2em;
@@ -152,6 +158,33 @@ section {
     grid-column: 1/6;
 }
 
+/* Contact Page */
+.contact_container .contact_title {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.contact_container .info_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.contact_container .info_container .info {
+    background-image: url('/images/contact_bg.jpg');
+    background-repeat: repeat;
+}
+
+.contact_container .info_container .info span {
+    font-weight: bold;
+}
+.contact_container .info_container .info li:first-child {
+    border-bottom: 2px solid skyblue;
+}
+.contact_container .info_container .info li {
+    padding: 1rem 0 0 1rem;
+}
+/* Footer */ 
 .footer_container {
     background-color: var(--footer-background-color);
     color: #c9c9c9;
