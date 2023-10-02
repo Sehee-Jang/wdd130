@@ -303,6 +303,11 @@ header nav a:hover {
     row-gap: .5rem;
 }
 
+.questions .form_title {
+    grid-column: 1/4;
+    font-weight: bold;
+}
+
 label[for="purpose"] {
     grid-column: 1/4;
 }
