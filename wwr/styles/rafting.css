@@ -191,6 +191,7 @@ header nav a:hover {
 .contact_container .info_container .info span {
     color: #abdcff;
 }
+
 .contact_container .info_container .info li:first-child {
     border-bottom: 3px solid #abdcff;
     padding: 1rem 0;
@@ -232,24 +233,34 @@ header nav a:hover {
 
 /* Contact Page - Form */
 .form_container {
-    margin-top: 40px;
-    padding: 10px 10px;
+    padding: 10px 10px 25px 0;
     background: #eee;
 }
 
 .form_container h1 {
+    font-size: 28px;
+    color: #222;
     text-align: center;
     padding: 25px 0;
 }
 
-form {
+.form_container .line {
+    width: 150px;
+    margin: 0 auto;
+    border-top: 3px solid #0092fb;
+    padding: 1rem 0;
+}
+
+.form_container form {
     width: 500px;
     height: auto;
     margin: 0 auto;
+    text-align: center;
 }
 
-fieldset {
+.form_container form fieldset {
     display: grid;
+    text-align: left;
     grid-gap: .5rem;
     margin: 1rem;
     padding: 1rem;
@@ -257,24 +268,54 @@ fieldset {
     border-radius: .5rem;
 }
 
-legend {
+.form_container form fieldset legend {
     padding: 0 1rem;
     font-weight: bold;
-    color: #222;
+    color: #017cd4;
+    font-size: 18px;
 }
 
-input {
+.contact_info input {
     border: none;
     border-bottom: 1px solid #ccc;
     background-color: #eee;
 }
 
-input, select, textarea {
+.contact_info {
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.contact_info input, select, textarea {
     padding: 0 .5rem;
     font-size: 1rem;
 }
 
-input[type="checkbox"] {
+/* Contact Page - Form(Questions) */
+.questions {
+    display: grid;
+    align-items: center;
+    row-gap: .5rem;
+}
+
+label[for="purpose"] {
+    grid-column: 1/4;
+}
+
+label[for="purpose"] , label[for="message"] {
+    font-weight: bold;
+}
+
+label[for="general"], label[for="reservation"], label[for="suggestion"] {
+    grid-column: 2/4;
+}
+
+.form-item {
+    margin: 0 auto;
+    width: 330px
+}
+
+.checkbox input[type="checkbox"] {
     width: 15px;
     height: 15px;
     vertical-align: middle;
@@ -285,15 +326,14 @@ button {
     padding: .5rem;
     background-color: var(--primary-color);
     color: #fff;
-    margin: 0 auto;
     border-radius: .5rem;
     border: none;
+    text-align: center;
 }
 
 button:hover {
     background-color: #037fd2;
 }
-
 
 /* Footer */ 
 .footer_container {

@@ -67,39 +67,40 @@
 
                 <!--Form-->
                 <section class="form_container">
-                    <h1>Adventure Awaits You!</h1>
+                    <h1>Hit Us Up</h1>
+                    <div class="line"></div>
                     <form>
                         <fieldset>
                             <legend>Contact Information</legend>
-                            <div class="form-item column2">
+                            <div class="contact_info">
                                 <input type="text" id="fullname" name="fullname" placeholder="Full Name">
                             </div>
-                            <div class="form-item column2">
+                            <div class="contact_info">
                                 <input type="email" id="useremail" name="useremail" placeholder="Email">
                             </div>
                         </fieldset>
 
                         <fieldset>
                             <legend>Questions</legend>
-                            <div class="form-item column1">
-                                <label for="browser">What is your favorite browser?</label>
+                            <div class="questions form-item">
+                                <label for="purpose">What's the purpose of the message?</label>
                                 
-                                <input type="radio" id="general" name="general">
+                                <input type="radio" id="general" name="questions" value="general">
                                 <label for="general">General Inquiry</label>
 
-                                <input type="radio" id="reservation" name="reservation">
+                                <input type="radio" id="reservation" name="questions" value="reservation">
                                 <label for="reservation">Reservation Question</label>
 
-                                <input type="radio" id="suggestion" name="suggestion">
+                                <input type="radio" id="suggestion" name="questions" value="suggestion">
                                 <label for="suggestion">Website Suggestion</label>
                             </div>
                             
-                            <div class="form-item column1">
-                                <label for="message">Message</label>
-                                <input type="text" id="message" name="message">
+                            <div class="message form-item">
+                                <label for="message">Message:</label>
+                                <textarea name="message" rows="10" cols="33" placeholder="Enter your message here."></textarea>
                             </div>
                             
-                            <div class="form-item column1">
+                            <div class="form-item">
                                 <input type="checkbox" id="subscribe" name="subscribe" checked>
                                 <label for="subscribe">Please subscribe me to the monthly newsletter</label>
                             </div>
