@@ -75,33 +75,39 @@ header nav a:hover {
     color: var(--nav-hover-link-color);
 }
 
+
+
 /**** Class Selectors ****/
 
-/* About Page*/
+.bold {
+    font-weight: bold;
+}
+
 .subtitle {
     text-align: center;
     font-size: 2em;
 }
 
-.mission {
-    position: relative;
-}
-
-section {
+.hero section {
     padding-bottom: 20px;
 }
 
-.mission .bg img, .adventure img {
+/* About Page : Mission */
+.hero .mission {
+    position: relative;
+}
+
+.hero .mission .bg img, .adventure img {
     display: block;
     width: 100%;    
     height: auto;
 }
 
-.mission h1, article {
+.hero .mission h1, article {
     position: absolute;
 }
 
-.mission h1 {
+.hero .mission h1 {
     top: 15%;
     left: 30%;
     color: #fff;
@@ -109,11 +115,11 @@ section {
     font-size: 2.7em;
 }
 
-.mission article {
+.hero .mission article {
     top: 30%;
 }
 
-.mission article .transbox {
+.hero .mission article .transbox {
     margin: 30px;
     background-color: #000000a6;
     box-shadow: 0 0 10px #1b1b1b;
@@ -121,11 +127,12 @@ section {
     text-align: left;
 }
 
-.mission article .transbox p {
+.hero .mission article .transbox p {
     padding: 40px;
     color: #fff;
 }
-.mission article img {
+
+.hero .mission article img {
     float: right;
     width: 25%;
     height: auto;
@@ -133,6 +140,7 @@ section {
     padding-right: 10px;
 }
 
+/* About Page : History */
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -147,6 +155,7 @@ section {
     margin: 0 auto;
 }
 
+/* About Page : Adventure */
 .adventure {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -158,7 +167,7 @@ section {
     grid-column: 1/6;
 }
 
-/* Contact Page */
+/* Contact Page - Company Info */
 .contact_container .contact_title {
     text-align: center;
     padding: 2rem 0;
@@ -167,23 +176,125 @@ section {
 .contact_container .info_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    min-height: 400px;
 }
 
 .contact_container .info_container .info {
-    background-image: url('/images/contact_bg.jpg');
-    background-repeat: repeat;
+    padding: 100px 40px;
+    background-image: url('/wwr/images/contact_bg.jpg');
+}
+
+.contact_container .info_container .info h1 {
+    color: #fff;
 }
 
 .contact_container .info_container .info span {
-    font-weight: bold;
+    color: #abdcff;
 }
 .contact_container .info_container .info li:first-child {
-    border-bottom: 2px solid skyblue;
+    border-bottom: 3px solid #abdcff;
+    padding: 1rem 0;
 }
 .contact_container .info_container .info li {
     padding: 1rem 0 0 1rem;
+    color: #fff;
 }
+
+/* Contact Page - Employees */
+.employees_container {
+    background-color: #abdcff;
+    padding: 20px 20px;
+}
+
+.employees_container .employees {
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.employees_container .employees figure, .employees_container .employees figcaption {
+    text-align: center;
+}
+
+.employees_container .employees figcaption{
+    padding-top: 10px;
+}
+
+.employees_container .employees img {
+    width: 60%
+}
+
+.employees_container .employees p {
+    padding: 0;
+}
+
+/* Contact Page - Form */
+.form_container {
+    margin-top: 40px;
+    padding: 10px 10px;
+    background: #eee;
+}
+
+.form_container h1 {
+    text-align: center;
+    padding: 25px 0;
+}
+
+form {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #555;
+    border-radius: .5rem;
+}
+
+legend {
+    padding: 0 1rem;
+    font-weight: bold;
+    color: #222;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
+}
+
+input, select, textarea {
+    padding: 0 .5rem;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+button {
+    width: 100px;
+    padding: .5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin: 0 auto;
+    border-radius: .5rem;
+    border: none;
+}
+
+button:hover {
+    background-color: #037fd2;
+}
+
+
 /* Footer */ 
 .footer_container {
     background-color: var(--footer-background-color);
