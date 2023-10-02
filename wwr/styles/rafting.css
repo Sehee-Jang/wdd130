@@ -181,10 +181,10 @@ header nav a:hover {
 
 .contact_container .info_container .info {
     padding: 100px 40px;
-    background-image: url('/wwr/images/contact_bg.jpg');
+    background-image: url('https://sehee-jang.github.io/wdd130/wwr/images/contact_bg.jpg');
 }
 
-.contact_container .info_container .info h1 {
+.contact_container .info_container .info h2 {
     color: #fff;
 }
 
@@ -242,7 +242,7 @@ header nav a:hover {
     background: #eee;
 }
 
-.form_container h1 {
+.form_container h2 {
     font-size: 28px;
     color: #222;
     text-align: center;
