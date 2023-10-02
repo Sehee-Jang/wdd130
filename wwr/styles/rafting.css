@@ -297,6 +297,11 @@ header nav a:hover {
 }
 
 /* Contact Page - Form(Questions) */
+.form-item {
+    margin: 20px auto;
+    width: 330px
+}
+
 .questions {
     display: grid;
     align-items: center;
@@ -307,24 +312,30 @@ header nav a:hover {
     grid-column: 1/4;
     font-weight: bold;
 }
-
+/* 
 label[for="purpose"] {
     grid-column: 1/4;
 }
 
 label[for="purpose"] , label[for="message"] {
     font-weight: bold;
-}
+} */
 
 label[for="general"], label[for="reservation"], label[for="suggestion"] {
     grid-column: 2/4;
 }
 
-.form-item {
-    margin: 0 auto;
-    width: 330px
+.message, .subscribe {
+    padding: 0 20px;
 }
 
+.message label {
+    font-weight: bold;
+}
+
+.message textarea {
+    margin-top: 20px;
+}
 .checkbox input[type="checkbox"] {
     width: 15px;
     height: 15px;
