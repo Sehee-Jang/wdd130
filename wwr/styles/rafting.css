@@ -201,6 +201,11 @@ header nav a:hover {
     color: #fff;
 }
 
+.contact_container .info_container .map {
+    /* width: 100%;
+    height: auto; */
+}
+
 /* Contact Page - Employees */
 .employees_container {
     background-color: #abdcff;
