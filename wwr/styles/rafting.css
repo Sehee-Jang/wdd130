@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
 
+                
 :root {
     --primary-color: #0092fb;
     --secondary-color: #198BCA;
     --accent1-color: #00569B;
     --accent2-color: #4CAF50;
-
-    --heading-font: 'Roboto' ,serif;
+                                                
+    --heading-font: 'Futura PT', 'Roboto' ,serif;
     --paragraph-font: 'Open Sans', serif;
 
     --nav-link-color: #333;
@@ -39,6 +41,10 @@ p {
 
 li {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
@@ -78,6 +84,15 @@ header nav a:hover {
 
 
 /**** Class Selectors ****/
+.color_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 99;
+}
 
 .bold {
     font-weight: bold;
@@ -109,10 +124,10 @@ header nav a:hover {
 
 .hero .mission h1 {
     top: 15%;
-    left: 30%;
+    left: 20%;
     color: #fff;
     text-shadow: 0 0 10px #1b1b1b;
-    font-size: 2.7em;
+    font-size: 60px;
 }
 
 .hero .mission article {
@@ -312,14 +327,6 @@ header nav a:hover {
     grid-column: 1/4;
     font-weight: bold;
 }
-/* 
-label[for="purpose"] {
-    grid-column: 1/4;
-}
-
-label[for="purpose"] , label[for="message"] {
-    font-weight: bold;
-} */
 
 label[for="general"], label[for="reservation"], label[for="suggestion"] {
     grid-column: 2/4;
@@ -336,6 +343,7 @@ label[for="general"], label[for="reservation"], label[for="suggestion"] {
 .message textarea {
     margin-top: 20px;
 }
+
 .checkbox input[type="checkbox"] {
     width: 15px;
     height: 15px;
@@ -356,6 +364,114 @@ button:hover {
     background-color: #037fd2;
 }
 
+/* Trips */
+.banner_container {
+    position: relative;
+}
+
+.banner_container .bg img {
+    display: block;
+    width: 100%;    
+    height: auto;
+}
+
+.banner_container h1 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: #fff;
+    text-shadow: 0 0 10px #1b1b1b;
+    font-size: 60px;
+    z-index: 100;
+}
+
+.trip-description {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.trip-description h2 {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.trip {
+    flex: 0 1 calc(33.33% - 20px);
+    margin: 10px;
+    /* margin-right: 20px;
+    margin-bottom: 20px; */
+}
+
+.trip img {
+    max-width: 100%;
+    height: auto;
+}
+
+.trip h2 {
+    margin-top: 10px;
+    min-height: 60px;
+    padding-left: 10px;
+}
+
+/* Trips - Trip Table */
+.trip-table {
+    margin-top: 40px;
+}
+
+.trip-table h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+.contact_us {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.contact_us h2 {
+    font-size: 30px;
+}
+
+.contact_us .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--nav-hover-link-color);
+}
+
 /* Footer */ 
 .footer_container {
     background-color: var(--footer-background-color);
@@ -370,6 +486,9 @@ button:hover {
     padding-left: 15%;
 }
 
+.footer_container .wireframe {
+    color: #c9c9c9;
+}
 .footer_container .socialmedia {
     padding-right: 2%;
 }
