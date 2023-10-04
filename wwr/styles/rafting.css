@@ -84,7 +84,7 @@ header nav a:hover {
 
 
 /**** Class Selectors ****/
-.color_overlay {
+/* .color_overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -92,7 +92,7 @@ header nav a:hover {
     right: 0;
     background-color: rgba(0, 0, 0, .3);
     z-index: 99;
-}
+} */
 
 .bold {
     font-weight: bold;
@@ -369,7 +369,7 @@ button:hover {
     position: relative;
 }
 
-.banner_container .bg img {
+.banner_container img {
     display: block;
     width: 100%;    
     height: auto;
@@ -378,11 +378,10 @@ button:hover {
 .banner_container h1 {
     position: absolute;
     top: 40%;
-    left: 10%;
+    left: 20%;
     color: #fff;
     text-shadow: 0 0 10px #1b1b1b;
     font-size: 60px;
-    z-index: 100;
 }
 
 .trip-description {
@@ -392,7 +391,7 @@ button:hover {
     margin-top: 40px;
 }
 
-.trip-description h2 {
+.trip-description .sub_title {
     flex-basis: 100%;
     text-align: center;
     font-size: 30px;
