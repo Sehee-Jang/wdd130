@@ -19,7 +19,7 @@
 }
 
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box; 
 }
@@ -98,7 +98,9 @@ header nav a:hover {
     padding-bottom: 20px;
 }
 
-/* About Page : Mission */
+/* 
+    About Page : Mission
+*/
 .hero .mission {
     position: relative;
 }
@@ -114,11 +116,12 @@ header nav a:hover {
 }
 
 .hero .mission h1 {
-    top: 15%;
-    left: 20%;
+    top: 20%;
+    left: 50%;
+    transform: translate( -50%, -50% );
     color: #fff;
     text-shadow: 0 0 10px #1b1b1b;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .hero .mission article {
@@ -134,7 +137,7 @@ header nav a:hover {
 }
 
 .hero .mission article .transbox p {
-    padding: 40px;
+    padding: 30px;
     color: #fff;
 }
 
@@ -146,7 +149,9 @@ header nav a:hover {
     padding-right: 10px;
 }
 
-/* About Page : History */
+/* 
+    About Page : History 
+*/
 .history {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -161,7 +166,9 @@ header nav a:hover {
     margin: 0 auto;
 }
 
-/* About Page : Adventure */
+/* 
+    About Page : Adventure 
+*/
 .adventure {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -173,7 +180,9 @@ header nav a:hover {
     grid-column: 1/6;
 }
 
-/* Contact Page - Company Info */
+/* 
+    Contact Page - Company Info 
+*/
 .contact_container .contact_title {
     text-align: center;
     padding: 2rem 0;
@@ -212,7 +221,9 @@ header nav a:hover {
     height: auto; */
 }
 
-/* Contact Page - Employees */
+/* 
+    Contact Page - Employees 
+*/
 .employees_container {
     background-color: #abdcff;
     padding: 20px 20px;
@@ -242,7 +253,9 @@ header nav a:hover {
     padding: 0;
 }
 
-/* Contact Page - Form */
+/* 
+    Contact Page - Form 
+*/
 .form_container {
     padding: 10px 10px 25px 0;
     background: #eee;
@@ -302,7 +315,9 @@ header nav a:hover {
     font-size: 1rem;
 }
 
-/* Contact Page - Form(Questions) */
+/* 
+    Contact Page - Form(Questions) 
+*/
 .form-item {
     margin: 20px auto;
     width: 330px
@@ -355,7 +370,9 @@ button:hover {
     background-color: #037fd2;
 }
 
-/* Trips */
+/* 
+    Trips 
+*/
 .banner_container {
     position: relative;
 }
@@ -383,7 +400,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin: 80px 0;
 }
 
 .trip-description .sub_title {
@@ -409,9 +426,11 @@ button:hover {
     padding-left: 10px;
 }
 
-/* Trips - Trip Table */
+/* 
+    Trips - Trip Table 
+*/
 .trip-table {
-    margin-top: 40px;
+    margin: 80px 0;
 }
 
 .trip-table h2 {
@@ -442,8 +461,7 @@ td {
 
 .contact_us {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin: 80px 0;
 }
 
 .contact_us h2 {
@@ -464,7 +482,133 @@ td {
     background-color: var(--nav-hover-link-color);
 }
 
-/* Footer */ 
+/*
+    Index
+*/
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: #fff;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 10px 20px;
+}
+
+.newsletter {
+    text-align: center;
+    margin: 80px auto;
+    max-width: 500px;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #444;
+}
+
+.cta {
+    text-align: center;
+    margin: 80px auto;
+    max-width: 500px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    width: 150px;
+    padding:10px;
+    background-color: #333;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.cta a {
+    color: #fff;
+}
+
+.cta .btn:hover {
+    background-color: #444;
+}
+
+.grid_layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 80px 0;
+}
+
+.grid_item {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.grid_item img {
+    width: 100%;
+    height: auto;
+}
+
+.grid_item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.grid_item p {
+    font-size: 16px;
+}
+
+
+/* 
+    Footer 
+*/ 
 .footer_container {
     background-color: var(--footer-background-color);
     color: #c9c9c9;
