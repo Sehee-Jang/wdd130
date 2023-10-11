@@ -58,15 +58,19 @@ header img {
 }
 
 header nav {
-    /* background-color: var(--nav-background-color); */
     font-size: 1.2em;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
     align-self: center;
 }
 
+header .navigation {
+    display: flex;
+}
+
+header .navigation li{
+    flex: 1 1 100%;
+}
 header nav a {
+    display: block;
     padding: 20px 20px;
     text-decoration: none;
     text-align: center;
