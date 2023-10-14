@@ -195,12 +195,19 @@ header nav a:hover {
 .contact_container .info_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 400px;
 }
 
 .contact_container .info_container .info {
-    padding: 100px 40px;
+    position: relative;
+    width: 100%;
     background-image: url('https://sehee-jang.github.io/wdd130/wwr/images/contact_bg.jpg');
+}
+
+.info .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
 }
 
 .contact_container .info_container .info h2 {
