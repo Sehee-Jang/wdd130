@@ -208,6 +208,8 @@ header nav a:hover {
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50% );
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .contact_container .info_container .info h2 {
@@ -282,7 +284,7 @@ header nav a:hover {
 .form_container .line {
     width: 150px;
     margin: 0 auto;
-    border-top: 3px solid #0092fb;
+    border-top: 3px solid #0037c3;
     padding: 1rem 0;
 }
 
@@ -306,7 +308,7 @@ header nav a:hover {
 .form_container form fieldset legend {
     padding: 0 1rem;
     font-weight: bold;
-    color: #017cd4;
+    color: #0037c3;
     font-size: 18px;
 }
 
@@ -370,7 +372,7 @@ label[for="general"], label[for="reservation"], label[for="suggestion"] {
 button {
     width: 100px;
     padding: .5rem;
-    background-color: var(--primary-color);
+    background-color: #0037c3;
     color: #fff;
     border-radius: .5rem;
     border: none;
